@@ -1,0 +1,56 @@
+:root {
+    --color-white: #FFFFFE;
+    --color-black: #0E172C;
+    --color-primary: #FEC7D7;
+    --color-secundary: #A786DF;
+    --color-tertiary: #D9D4E7;
+    --color-green: #85D1CE;
+    --color-blue: #91C1D7;    
+    --color-gray: #535353;    
+    --font-family: "Nunito";
+}
+
+*{
+    box-sizing: border-box;
+    background: var(--color-primary);
+    font-family: var(--font-family);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+};
+
+.inicio{
+    position: relative;
+}
+
+.icono{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -75px
+}
+.inicio div{
+    width: 85%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.fondo{
+    background-color: var(--color-white);  
+}
+
+.fondo img, .fondo h4, .fondo p{
+    background: none;
+}
+
+.siguiente{
+    width: 327px;
+    padding: 12px 16px;
+    margin: auto;
+    margin-top: 110px;  
+    border-radius: 98px;
+    background: var(--color-black);
+    color:var(--color-white);   
+}

@@ -1,0 +1,100 @@
+:root {
+    --color-white: #FFFFFE;
+    --color-black: #0E172C;
+    --color-primary: #FEC7D7;
+    --color-secundary: #A786DF;
+    --color-tertiary: #D9D4E7;
+    --color-green: #85D1CE;
+    --color-blue: #91C1D7;    
+    --color-gray: #535353;    
+    --font-family: "Nunito";
+}
+
+*{
+    box-sizing: border-box;
+    background: var(--color-primary);
+    font-family: var(--font-family);
+    font-size: 16px;
+};
+
+main{
+    width: 88%;
+    display: flex;
+    margin: auto;           
+}
+
+h2{
+    margin-top: 10%;
+    line-height: 138%;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.contacto{
+    width: 25%;
+    height: 16%;
+    margin: auto;
+    text-align: center;
+}    
+
+.contacto-img{
+    border-radius: 50%;    
+}
+
+.nombre-usuario, .editar-cuenta{
+    font-size: 12px;
+}
+
+.usuario div{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+label{
+    padding: 12px 16px;
+}
+
+input{
+    width: 327px;
+    padding: 12px 16px;
+    margin: auto;    
+    background: var(--color-white);
+    border-radius: 4px;
+    border: 1px solid var(--color-gray);
+}
+
+#guardar {
+    width: 327px;
+    border-radius: 98px;
+    margin-top: 24px;
+    
+    background: var(--color-black);
+    color:var(--color-white)
+}
+
+nav{    
+    width: 100%;
+    height: 80px;
+    background: var(--color-white);
+    position: fixed;
+    bottom: 0;
+    left: 0;    
+}
+
+nav ul{     
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 0px 24px;
+}
+
+li{
+    list-style: none;
+    background: none;
+} 
+
+li a, img{
+    background: none;
+}

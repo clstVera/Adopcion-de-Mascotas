@@ -1,0 +1,93 @@
+:root {
+    --color-white: #FFFFFE;
+    --color-black: #0E172C;
+    --color-primary: #FEC7D7;
+    --color-secundary: #A786DF;
+    --color-tertiary: #D9D4E7;
+    --color-green: #85D1CE;
+    --color-blue: #91C1D7;    
+    --color-gray: #535353;    
+    --font-family: "Nunito";
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    list-style: none; 
+    
+    padding: 0;
+};
+
+.mascota img{
+    width: 375px;
+    height: 442px;    
+    position: absolute;
+}
+
+.regresar img{
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    z-index: 1;  
+}
+
+main{
+    border-top-left-radius: 16px 16px;
+    border-top-right-radius: 16px 16px;       
+}
+
+.fila1{
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.nombre, .raza , .edad, .ubicacion, .contacto {
+    display: flex;
+    flex-direction: row;
+}
+
+.fila2{
+    height: 24px;
+}
+.fila5{
+    display: flex;
+    justify-content: space-around;
+}
+.fila5 ul{
+    width: 25%;
+    border-radius: 8px;
+    border: 3px solid var(--color-secundary);
+}
+
+.fila5 ul li{
+    align-self: center;    
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+}
+.contacto img{
+    border-radius: 50%;
+    border: 3px solid var(--color-green);
+}
+
+h3{
+    font-weight: bold !important;
+    font-size: 24px !important;
+}
+
+h4{
+    font-weight: bold !important;
+    font-size: 18px !important;
+}
+
+h5{
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+
+h6{
+   font-size: 11px !important; 
+}

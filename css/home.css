@@ -1,0 +1,144 @@
+:root {
+    --color-white: #FFFFFE;
+    --color-black: #0E172C;
+    --color-primary: #FEC7D7;
+    --color-secundary: #A786DF;
+    --color-tertiary: #D9D4E7;
+    --color-green: #85D1CE;
+    --color-blue: #91C1D7;    
+    --color-gray: #535353;    
+    --font-family: "Nunito";
+}
+
+*{
+    box-sizing: border-box;
+    background: var(--color-primary);
+    font-family: var(--font-family);
+    text-decoration: none; 
+};
+
+
+main{
+    width: 88%;
+    display: flex;
+    margin: auto;
+            
+}
+
+h2{
+    margin-top: 5%;
+    line-height: 138%;
+    font-weight: 800;
+}
+
+section{
+    margin-top: 3.5%;
+}
+
+h3{
+    line-height: 138%;
+}
+
+.categoria{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subcategoria{
+    width: 47%;
+    border-radius: 5%;
+    background: var(--color-black);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 50%;
+}
+
+button:focus:not(:focus-visible) {
+    opacity: 100%;
+}
+
+.subcategoria p {
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   background-color: var(--color-green); 
+   display: flex;
+}
+
+p img{
+    margin:auto;
+    background-color: var(--color-green); 
+    justify-content: space-around;
+}
+
+h4{
+    background: none;
+    color: var(--color-white)
+}
+
+nav{    
+    width: 100%;
+    height: 80px;
+    background: var(--color-white);
+    position: fixed;
+    bottom: 0;
+    left: 0;    
+}
+
+nav ul{     
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 0px 24px;
+}
+
+li{
+    list-style: none;
+    background:var(--color-white)
+} 
+
+li a, img{
+    background: none;
+}
+
+.item{
+    width: 155px;
+    height: 266px;
+    margin: 10px;
+   
+    position: relative;
+    display: inline-block;
+}
+
+.item img{
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+
+.item h5{
+    position: absolute;
+    top: 190px;    
+    transform: translate(16px);
+    background: none;
+    font-weight: bold;
+    color:var(--color-white)
+} 
+
+.item p{
+    position: absolute;
+    top: 216px;    
+    transform: translate(16px);
+    background: none;
+    font-size: 14px;
+    color:var(--color-white)
+}
