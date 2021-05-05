@@ -20,11 +20,11 @@ function marcarFavorito() {
         favoritos = [];
     }
     //Si la mascota no esta marcada como favorita, la marcamos y agregamos al listado de favoritos
-    if (mascota.favorito == 0) {
+    if (!mascota.favorito || mascota.favorito == 0) {
         //Se agrega la mascota al listado de favoritos
         favoritos.push(mascota);
         mascota.favorito = 1
-        favorito.innerHTML = `<img src="https://i.ibb.co/HHM6mDC/img15favorito1.png" alt="favorito" style="width: 42px;
+        favorito.innerHTML = `<img class="img-responsive" src="https://i.ibb.co/HHM6mDC/img15favorito1.png" alt="favorito" style="width: 42px;
                     height: 42px;"></img>`
     } else {
         //Si la mascota esta como favorita significa que ya se debe 
@@ -41,8 +41,8 @@ function marcarFavorito() {
 }
 
 function cargarDetalleMascota(mascota) {
-    document.querySelector('.mascota').innerHTML = `<img src="${mascota.img}" alt="${mascota.nombre}" style="width: 375px; height: 442px;">
-    <a class="regresar" href="home.html"><img src="https://i.ibb.co/hF1CXWN/img0.png" alt=""></a>`
+    document.querySelector('.mascota').innerHTML = `<a class="regresar" href="home.html"><img src="https://i.ibb.co/hF1CXWN/img0.png" alt=""></a>
+    <img src="${mascota.img}" alt="${mascota.nombre}" style="width: 375px; height: 442px;">`
 
     document.querySelector('.detallemascota').innerHTML = `<section class="content">
             <div class="row fila1">
@@ -76,15 +76,15 @@ function cargarDetalleMascota(mascota) {
         <section class="content mt-4">
             <h4>Personalidad</h4>
             <div class="row fila5">
-                <ul class="col-4 mt-auto">
+                <ul class="col-4 text-center mt-auto">
                     <li><img src="https://i.ibb.co/985m9Pf/img19.png" alt=""></li>
                     <li>${mascota.personalidad[0]}</li>
                 </ul>
-                <ul class="col-4">
+                <ul class="col-4 text-center">
                     <li><img src="https://i.ibb.co/Ny6GCV6/img20.png" alt=""></li>
                     <li>${mascota.personalidad[1]}</li>
                 </ul>
-                <ul class="col-4">
+                <ul class="col-4 text-center">
                     <li><img src="https://i.ibb.co/kcLzbs7/img21.png" alt=""></li>
                     <li>${mascota.personalidad[2]}</li>
                 </ul>
@@ -96,7 +96,7 @@ function cargarDetalleMascota(mascota) {
         </section>
 
         <section class="row mb-3">
-            <div class="col-6 contacto">
+            <div class="col-8 contacto">
                 <img src="${mascota.publicadoPor.img}" alt="" style="width: 48px;
                 height: 48px;">
                 <div class="publicado-por">
@@ -104,7 +104,7 @@ function cargarDetalleMascota(mascota) {
                     <h5>${mascota.publicadoPor.nombre}</h5>
                 </div>
             </div>
-            <div class="col-6"><a href="../html/contacto.html?id=${mascota.publicadoPor.id}"><img src="https://i.ibb.co/kcYb6Lz/contactar.png" alt=""></a></div>
+            <div class="col-4"><a href="../html/contacto.html?id=${mascota.publicadoPor.id}"><img src="https://i.ibb.co/kcYb6Lz/contactar.png" alt=""></a></div>
         </section>`
 }
 

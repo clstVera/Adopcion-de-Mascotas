@@ -47,11 +47,16 @@ header{
 }
 
 .regresar img{
-    position: absolute;
+    position: relative;
     left: 24px;
-    top: 24px;
+    top: -90px;
     z-index: 1;
     background: none;
+}
+
+.cargar-mensaje{
+    display:flex;
+    flex-direction: column;
 }
 
 .hora{
@@ -61,33 +66,46 @@ header{
 
 .mensaje-enviado, .mensaje-recibido{
     width: 255px;
-    padding: 16px;    
+    padding: 16px;
+    margin: 16px;    
     background: var(--color-white);
     border-radius: 16px;
 }
 
-.mensaje-enviado{
-    transform: translateX(92px);
+.m-envio{
+    align-self: flex-end;
 }
 
 .mensaje-recibido{
-    transform: translateX(28px);
     background: var(--color-gray);
     color: var(--color-white)
+}
 
+.m-recibo{
+    align-self: flex-start;
 }
 
 .texto{
-    width: 359px;
+    width: 100%;
+    max-width: 705px;
+    margin: auto;
     padding: 12px 16px;
-    margin: auto;    
     background: var(--color-white);
-    
     border-radius: 4px;
     border: 1px solid var(--color-gray);
     color: var(--color-gray);
-
     position: fixed;
-    bottom: 8px;
-    left: 8px;    
+    bottom: 24px;
 }
+
+@media (min-width: 768px) {
+
+    body{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 24px;
+        border-style: none dotted;
+        border-color: var(--color-green);
+        border-width: 7px;
+        }
+    }

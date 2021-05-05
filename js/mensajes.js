@@ -13,18 +13,20 @@ function cargarMensajes() {
             let remitente = usuarios.find(usuario => usuario.id == mensaje.idRemitente);
             let nombreCompleto = remitente.nombre + " " + remitente.apellido;
 
-            sms.innerHTML += `<div class="contacto">
-                                    <img class="contacto-img" src="${remitente.img}" alt="" style="width: 64px;
-                                        height: 64px;">
-                                    <div class="mensaje">
-                                        <div class="usuario">
-                                            <p class="nombre-usuario">${nombreCompleto}</p>
-                                            <p>${mensaje.hora}</p>
+            sms.innerHTML += `  <a href="contacto.html?id=${remitente.id}">
+                                    <div class="contacto">
+                                        <img class="contacto-img" src="${remitente.img}" alt="" style="width: 58px;
+                                            height: 64px;">
+                                        <div class="mensaje">
+                                            <div class="usuario">
+                                                <p class="nombre-usuario">${nombreCompleto}</p>
+                                                <p>${mensaje.hora}</p>
+                                            </div>
+                                            <p>${mensaje.mensaje}</p>
                                         </div>
-                                        <p>${mensaje.mensaje}</p>
+                                        <img src="https://i.ibb.co/hyd4NR4/img23.png" alt="">
                                     </div>
-                                    <a href="contacto.html?id=${remitente.id}"><img src="https://i.ibb.co/hyd4NR4/img23.png" alt=""></a>
-                                </div>
+                                </a>
                                 <hr>`
         }
     })

@@ -54,3 +54,15 @@
     background: var(--color-black);
     color:var(--color-white);   
 }
+
+@media (min-width: 768px) {
+
+    body{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 24px;
+        border-style: none dotted;
+        border-color: var(--color-green);
+        border-width: 7px;
+        }
+    }

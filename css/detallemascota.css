@@ -13,22 +13,20 @@
 *{
     box-sizing: border-box;
     font-family: var(--font-family);
-    list-style: none; 
-    
+    list-style: none;     
     padding: 0;
 };
 
-.mascota img{
+.img-responsive{
     width: 375px;
     height: 442px;    
     position: absolute;
 }
 
 .regresar img{
-    position: absolute;
-    left: 24px;
-    top: 24px;
-    z-index: 1;  
+    position: relative;
+    transform: translate(60px, -180px);    
+    z-index: 1; 
 }
 
 main{
@@ -91,3 +89,15 @@ h5{
 h6{
    font-size: 11px !important; 
 }
+
+@media (min-width: 768px) {
+
+    body{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 24px;
+        border-style: none dotted;
+        border-color: var(--color-green);
+        border-width: 7px;
+        }
+    }

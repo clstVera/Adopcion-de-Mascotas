@@ -24,12 +24,12 @@ function cargarMensajes() {
     misMensajes.forEach(mensaje => {
         let sms = document.querySelector('.cargar-mensaje')
         if (mensaje.idRemitente == 1) {
-            sms.innerHTML += `<div class="mensaje">
+            sms.innerHTML += `<div class="mensaje m-envio">
             <p class="hora">${mensaje.hora}</p>
             <p class="mensaje-enviado">${mensaje.mensaje}</p>
         </div>`
         } else {
-            sms.innerHTML += `<div class="mensaje">
+            sms.innerHTML += `<div class="mensaje m-recibo">
             <p class="hora">${mensaje.hora}</p>
             <p class="mensaje-recibido">${mensaje.mensaje}</p>
         </div>`

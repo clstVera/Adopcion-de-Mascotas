@@ -32,11 +32,13 @@ h2{
 
 nav{    
     width: 100%;
+    max-width: 705px;
+    margin: 0 auto;
+    padding: 0 24px;
     height: 80px;
     background: var(--color-white);
     position: fixed;
-    bottom: 0;
-    left: 0;    
+    bottom: 0;        
 }
 
 nav ul{     
@@ -90,3 +92,15 @@ li a, img{
     font-size: 14px;
     color:var(--color-white)
 }
+
+@media (min-width: 768px) {
+
+    body{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 20px;
+        border-style: none dotted;
+        border-color: var(--color-green);
+        border-width: 7px;
+        }
+    }

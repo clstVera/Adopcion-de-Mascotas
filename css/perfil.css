@@ -17,12 +17,6 @@
     font-size: 16px;
 };
 
-main{
-    width: 88%;
-    display: flex;
-    margin: auto;           
-}
-
 h2{
     margin-top: 10%;
     line-height: 138%;
@@ -52,6 +46,7 @@ h2{
 
 label{
     padding: 12px 16px;
+    margin-left:15%
 }
 
 input{
@@ -74,11 +69,13 @@ input{
 
 nav{    
     width: 100%;
+    max-width: 705px;
+    margin: 0 auto;
+    padding: 0 24px;
     height: 80px;
     background: var(--color-white);
     position: fixed;
-    bottom: 0;
-    left: 0;    
+    bottom: 0;        
 }
 
 nav ul{     
@@ -98,3 +95,15 @@ li{
 li a, img{
     background: none;
 }
+
+@media (min-width: 768px) {
+
+    body{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 24px;
+        border-style: none dotted;
+        border-color: var(--color-green);
+        border-width: 7px;
+        }
+    }
